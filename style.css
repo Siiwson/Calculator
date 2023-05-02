@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #141414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn {
+    width: 75px;
+    height: 75px;
+    border: 1px solid #141414;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: #ededed;
+    font-size: 2rem;
+}
+
+.btn.dbWidBtn {
+    width: 155px;
+    border-radius: 50px;
+    grid-column: span 2;
+}
+
+.btn.orange {
+    background: #ae7502;
+    font-weight: bold;
+}
+
+.btn.orange:hover {
+    background: #ddab46;
+}
+
+.btn.gray {
+    background: #7f7f7f;
+    color: #000;
+}
+
+.btn.gray:hover {
+    background: #d1d1d1;
+}
+
+.btn.dark-gray {
+    background: #303030;
+}
+
+.btn.dark-gray:hover {
+    background: #9b9b9b;
+}
+
+.row {
+    width: 330px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    align-content: center;
+    margin: 5px 0;
+}
+
+.row.dbWidRow {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.display {
+    width: 330px;
+    height: 60px;
+    background: #7f7f7f;
+    border: 1px solid #000;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
