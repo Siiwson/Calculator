@@ -13,13 +13,34 @@
     flex-direction: column;
 }
 
+.display {
+    width: 275px;
+    height: 60px;
+    background: #7f7f7f;
+    border-radius: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+    margin: 10px;
+    font-size: 2rem;
+}
+
+.buttons {
+    width: 315px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 5px;
+    align-content: center;
+}
+
 .btn {
     width: 75px;
     height: 75px;
     border: 1px solid #141414;
     border-radius: 50%;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
     color: #ededed;
     font-size: 2rem;
 }
@@ -54,31 +75,4 @@
 
 .btn.dark-gray:hover {
     background: #9b9b9b;
-}
-
-.row {
-    width: 330px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 5px;
-    align-content: center;
-    margin: 5px 0;
-}
-
-.row.dbWidRow {
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.display {
-    width: 330px;
-    height: 60px;
-    background: #7f7f7f;
-    border: 1px solid #000;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
 }
